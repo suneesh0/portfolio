@@ -107,7 +107,7 @@ header{
 /* ----HOME LEFT----- */
 .container .container-lft{
     /* border: 2px solid cyan; */
-    background-color: rgb(57, 55, 55);
+    /* background-color: rgb(57, 55, 55); */
     width: 50%;
     display: flex;
     align-items: center;
@@ -287,10 +287,12 @@ header{
     justify-content: center;
 }
 .container .home-rit .img{
+    /* border: 2px solid red; */
     height: 300px;
     width: 300px;
 }
 .container .home-rit .img .circle{
+    /* border: 2px solid red; */
     position: relative;
     display: flex;
     align-items: center;
@@ -361,7 +363,6 @@ header{
 
 .container-about .container-lft{
     /* border: 2px solid cyan; */
-    background-color: rgb(57, 55, 55);
     width: 50%;
     height: 100vh;
     display: flex;
@@ -777,11 +778,81 @@ header{
     #close-btn:hover{
         cursor: pointer;
     }
-    
+    .container .home-rit{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    .container .home-rit .img{
+        /* border: 2px solid red; */
+        height: 200px;
+        width: 200px;
+        padding-left: 10px;
+    }
+    .container-about{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .container-about .about-rit{
+        /* border: 2px solid cyan; */
+        width: 50%;
+        margin: 0;
+    }
     
 }
 
+@media (max-width:550px) {
+    .container{
+        /* border: 2px solid red; */
+        display: block;
+    }
+    .container .container-lft{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    
+    .container .home-lft .details .hire{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        padding-left: 10px;
+    }
 
+    .container .home-rit{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-top: 20px;
+        height: 300px;
+        margin-left: 0;
+    }
+    .container .home-rit .img .circle::after{
+        content: '';
+        background: linear-gradient(to right,rgb(57,55,55) 0,rgb(57,55,55) 50%,black 50%,black 100%);
+        position: absolute;
+        border-radius: 50%;
+        width: 95%;
+        height: 95%;
+    }
+    .container-about{
+        /* border: 2px solid red; */
+        display: block;
+        height: 150vh;
+        width: 100%;
+    }
+    .container-about .container-lft{
+        /* border: 2px solid cyan; */
+        width: 100%;
+        background: transparent;
+        height: 50vh;
+    }
+    .container-about .about-rit{
+        /* border: 2px solid cyan; */
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
 
 
