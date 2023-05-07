@@ -288,8 +288,12 @@ header{
 }
 .container .home-rit .img{
     /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
     height: 300px;
     width: 300px;
+    padding-left: 0%;
 }
 .container .home-rit .img .circle{
     /* border: 2px solid red; */
@@ -297,6 +301,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0%;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -350,7 +355,17 @@ header{
     align-items: center;
     justify-content: center;
 }
+.me{
+    /* border: 2px solid red; */
+    margin: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(60deg,yellow,fuchsia);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
+}
 
 
 
@@ -422,17 +437,6 @@ header{
 .container-about .about-rit .about-dtls{
     /* border: 2px solid cyan; */
     width: 300px;
-}
-.container-about .about-rit .about-dtls .me{
-    /* border: 2px solid red; */
-    margin: 15px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(60deg,yellow,fuchsia);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
 }
 .container-about .about-rit .about-dtls h2.abou-t{
     /* border: 2px solid red; */
@@ -780,9 +784,7 @@ header{
     }
     .container .home-rit{
         /* border: 2px solid red; */
-        width: 100%;
-        margin-left: 50px;
-        margin-right: 0;
+        width: 50%;
     }
     .container .home-rit .img{
         /* border: 2px solid red; */
@@ -815,19 +817,26 @@ header{
     .container .home-lft .details .hire{
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
         width: 100%;
-        padding-left: 10px;
+        padding-right: 60px;
     }
-
+    .container .home-rit .img{
+        margin-right: 10px;
+    }
     .container .home-rit{
         /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         margin-top: 20px;
         height: 300px;
         margin-left: 0;
+        padding: 0%;
     }
     .container .home-rit .img .circle::after{
+        margin-left: 0;
         content: '';
         background: linear-gradient(to right,rgb(57,55,55) 0,rgb(57,55,55) 50%,black 50%,black 100%);
         position: absolute;
