@@ -503,7 +503,7 @@ header{
     text-transform: uppercase;
 }
 .container-about .about-rit .about-dtls .cv a:hover{
-    box-shadow: 0 0 25px rgba(197, 195, 195, 0.54);
+    box-shadow: 0 0 25px rgba(197, 195, 195, 0.603);
     background: linear-gradient(50deg,red,yellow,cyan);
 }
 
@@ -686,7 +686,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.contact .contact-me .form .btn-submit input {
+.contact .contact-me .form .btn-submit button {
     border: 2px solid red;
     border-radius: 10px;
     width: 50%;
@@ -698,7 +698,7 @@ header{
     background-color: black;
     cursor: pointer;
 }
-.contact .contact-me .form .btn-submit input:hover {
+.contact .contact-me .form .btn-submit button:hover {
     border: 2px solid white;
 }
 
