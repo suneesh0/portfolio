@@ -404,7 +404,7 @@ header{
     width: 200px;
     height: 200px;
     overflow: hidden;
-    animation:float 3s ease-in-out infinite;
+    animation:float1 3s ease-in-out infinite;
     animation-delay: 0s;
 }
 .container-about .container-lft .about-lft .img img{
@@ -989,9 +989,20 @@ header{
         transform: translate(0);
     }
     50%{
-        transform: translatey(-5px);
+        transform: translatey(-10px);
     }
     100%{
         transform: translatex();
+    }
+}
+@keyframes float1 {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translatex(-10px);
+    }
+    100%{
+        transform: translatey();
     }
 }
